@@ -1,26 +1,28 @@
+
+396
 # Farm Stand
 
-Jednoduchá Express + MongoDB aplikace pro správu produktů.
+A simple Express + MongoDB application for product management.
 
-## Spuštění
+## Starting
 
-1. Nainstaluj závislosti:
-   ```bash
-   npm install
-   ```
-2. Spusť aplikaci:
-   ```bash
-   npm start
-   ```
-3. Otevři v prohlížeči:
-   ```text
-   http://localhost:3000/products
-   ```
+1. Install dependencies: 
+```bash 
+npm install 
+```
+2. Start the application: 
+```bash 
+npm start 
+```
+3. Open in the browser: 
+```text 
+http://localhost:3000/products 
+```
 
-## Funkce
+## Functions
 
-- zobrazení všech produktů
-- přidání nového produktu
-- úprava produktu
-- smazání produktu
-- jednoduché CSS styly
+- display of all products
+- adding a new product
+- product modification
+- deleting the product
+- simple CSS styles
