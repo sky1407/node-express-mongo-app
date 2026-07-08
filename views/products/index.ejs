@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <main class="container">
+        <h1>
+            <%= category %> Products
+        </h1>
+        <p class="subtitle">Manage products in the farm stand application.</p>
+
+        <div class="actions">
+            <a class="btn btn-primary" href="/products/new">Add New Product</a>
+            <a class="btn btn-secondary" href="/products">All Products</a>
+        </div>
+
+        <% if (category !=='All' ) { %>
+            <p class="filter-info">Zobrazuji kategorii: <strong>
+                    <%= category %>
+                </strong></p>
+            <% } %>
+
+                <ul class="product-list">
+                    <% for (let product of products) { %>
+                        <li class="product-item">
+                            <a href="/products/<%= product._id %>">
+                                <%= product.name %>
+                            </a>
+                            <span class="pill">
+                                <%= product.category %>
+                            </span>
+                        </li>
+                        <% } %>
+                </ul>
+    </main>
+</body>
+
+</html>
